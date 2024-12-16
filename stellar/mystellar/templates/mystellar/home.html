@@ -1,0 +1,28 @@
+{% extends 'mystellar/base.html' %}
+
+{% block title %}
+<title>Home</title>
+{% endblock title %}
+
+{% block content %}
+{% load static %}
+<img class="myImage" src="{% static 'images/img.jpg' %}">
+<div class="content">
+  <h1>Stellar Classification</h1>
+  <button class="me-md-2" style="text-decoration: none; display: inline-block; color: #fff; font-size: 20px; border: 2px solid #fff; padding: 10px 40px; border-radius: 40px; margin-top: 20px; background-color: transparent;" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+    Explore
+  </button>
+  <a href="{% url 'model' %}">Model</a>
+</div>
+<div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="staticBackdropLabel">Stellar Classification</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      This project aims to provide a practical tool that showcases the potential of machine learning to revolutionize stellar classification and facilitate more efficient research in astronomy. Stellar classification is a fundamental aspect of astronomy, essential for understanding the composition, evolution, and behavior of celestial objects. By categorizing celestial objects based on spectral characteristics, astronomers can gain valuable insights into the lifecycle of stars and the formation of galaxies.
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'mystellar/base.html' %}
+
+{% block title %}
+<title>Result</title>
+{% endblock title %}
+
+{% block content %}
+{% load static %}
+{% if prediction == 'GALAXY' %}
+<img class="myImage" src="{% static 'images/galaxy.jpg' %}">
+{% endif %}
+{% if prediction == 'STAR' %}
+<img class="myImage" src="{% static 'images/star.jpg' %}">
+{% endif %}
+{% if prediction == 'QSO' %}
+<img class="myImage" src="{% static 'images/qso.jpg' %}">
+{% endif %}
+<div style="width: 70rem; margin: 100px auto; text-align: center;">
+  <h2 style="color: white; font-size: 50px; font-weight: 900;">Prediction</h2>
+  <p style="color: white; font-size: 20px;">Based on the spectral characteristics, the stellar object is {{ prediction }}.</p>
+  <a href="{% url 'home' %}" class="btn btn-primary me-md-2">HOME</a>
+  <a href="{% url 'model' %}" class="btn btn-secondary">MODEL</a>
+</div>
+{% endblock %}

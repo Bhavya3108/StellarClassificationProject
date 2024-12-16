@@ -1,0 +1,74 @@
+{% extends 'mystellar/base.html' %}
+
+{% block title %}
+<title>Model</title>
+{% endblock title %}
+
+{% block content %}
+{% load static %}
+<video autoplay loop muted plays-inline class="myVideo">
+    <source src="{% static 'videos/space.mp4' %}" type="video/mp4">
+</video>
+<form method="post" class="form" autocomplete="off">
+    {% csrf_token %}
+    <h1>TEST MODEL</h1>
+    <input type="text" required name="alpha" class="box" placeholder="alpha                                         [0,360]">
+    <input type="text" required name="delta" class="box" placeholder="delta                                        [-19,83]">
+    <input type="text" required name="i" class="box" placeholder="i                                                   [9,32]">
+    <input type="text" required name="z" class="box" placeholder="z                                           [-9999,29]">
+    <input type="text" required name="run_ID" class="box" placeholder="run_ID                                 [109,8162]">
+    <input type="text" required name="redshift" class="box" placeholder="redshift                                         [0,7]">
+    <input type="text" required name="plate" class="box" placeholder="plate                                  [266,12547]">
+    <input type="text" required name="fiber_ID" class="box" placeholder="fiber_ID                                   [1,1000]">
+    <input type="submit" value="PREDICT" id="submit">
+</form>
+
+{% if error1 %}
+<div class="text-center" style="padding: 10px;">
+    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        ERROR
+    </button>
+</div>
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Error message</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        {{ error1 }}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% if error2 %}
+<div class="text-center" style="padding: 10px;">
+    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      ERROR
+    </button>
+</div>
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Error message</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        {{ error2 }}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% endblock %}
