@@ -11,18 +11,18 @@ Before setting up the project, ensure you have the following installed:
 
 # Installation
 
-Follow these steps to set up and run the project locally:
+Follow these steps to set up and run the project locally.
 
 ### 1. Clone the repository
 
 Use git to clone this repository to your local machine:
 ```
-git clone <repository-url>
+git clone https://github.com/Bhavya3108/StellarClassificationProject.git
 ```
 
 Navigate into the project directory:
 ```
-cd <project-folder>
+cd StellarClassificationProject
 ```
 
 ### 2. Create and activate a virtual environment
@@ -78,19 +78,3 @@ Open your web browser and visit:
 ```
 http://127.0.0.1:8000/
 ```
-
-# Project Structure
-
-<project-folder>/
-├── manage.py
-├── <project-name>/
-│   ├── settings.py
-│   ├── urls.py
-│   ├── ...
-├── <app-name>/
-│   ├── models.py
-│   ├── views.py
-│   ├── ...
-├── requirements.txt
-├── .gitignore
-└── README.md
