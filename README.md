@@ -6,8 +6,8 @@ This project leverages the Stellar Classification SDSS-17 dataset from Kaggle to
 
 Before setting up the project, ensure you have the following installed:
 
-1. Python (version 3.10.6) [ https://www.python.org/downloads/ ]
-2. Git version control [ https://git-scm.com/ ]
+1. Python (version 3.10.6) [ https://www.python.org/downloads/release/python-3106/ ]
+2. Git version control [ https://git-scm.com/downloads ]
 
 # Installation
 
@@ -59,6 +59,11 @@ pip install -r requirements.txt
 ```
 
 ### 4. Apply migrations
+
+Navigate into the django project directory:
+```
+cd stellar
+```
 
 Set up the database by applying migrations:
 ```
