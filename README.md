@@ -1,5 +1,7 @@
 # Stellar Classification
 
+This project leverages the Stellar Classification SDSS-17 dataset from Kaggle to develop a robust machine learning model for classifying celestial objects. The development pipeline includes comprehensive data preprocessing, exploratory data analysis (EDA) to uncover patterns and relationships within the dataset, and feature selection to enhance model efficiency and accuracy. A machine learning model was trained and validated to ensure reliable predictions. The finalized model was deployed through a Django-based web application, providing an interactive and user-friendly graphical user interface (GUI). This deployment bridges data-driven insights and real-world accessibility, providing a practical tool for stellar classification tasks.
+
 ## Prerequisites
 
 Before setting up the project, ensure you have the following installed:
