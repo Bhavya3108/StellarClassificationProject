@@ -1,17 +1,14 @@
 # Stellar Classification
----
 
 ## Description
----
 
 ## Prerequisites
 Before setting up the project, ensure you have the following installed:
 1. Python (version 3.10.6) [ https://www.python.org/downloads/ ]
 2. Git version control [ https://git-scm.com/ ]
----
 
 ## Installation
-Follow these steps to set up and run the project locally:
+Follow these steps to set up and run the project locally:  
 **1. Clone the repository**  
 Use git to clone this repository to your local machine:  
 ```
@@ -58,7 +55,8 @@ python manage.py runserver
 ```
 **6. Access the application**
 Open your web browser and visit:
-```http://127.0.0.1:8000/```
----
+```
+http://127.0.0.1:8000/
+```
 
 ## Project Structure
