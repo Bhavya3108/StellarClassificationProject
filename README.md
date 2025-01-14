@@ -9,15 +9,15 @@ Before setting up the project, ensure you have the following installed:
 
 ## Installation
 Follow these steps to set up and run the project locally:  
-**1. Clone the repository**  
+1. Clone the repository  
 Use git to clone this repository to your local machine:  
 ```
 git clone <repository-url>
 ```  
-Navigate into the project directory:    
+Navigate into the project directory:  
 ```
 cd <project-folder>
-```
+```  
 
 **2. Create and activate a virtual environment**
 Create a python virtual environment to isolate dependencies:  
