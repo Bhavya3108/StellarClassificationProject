@@ -80,3 +80,17 @@ http://127.0.0.1:8000/
 ```
 
 # Project Structure
+
+<project-folder>/
+├── manage.py
+├── <project-name>/
+│   ├── settings.py
+│   ├── urls.py
+│   ├── ...
+├── <app-name>/
+│   ├── models.py
+│   ├── views.py
+│   ├── ...
+├── requirements.txt
+├── .gitignore
+└── README.md
