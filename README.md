@@ -27,24 +27,24 @@ cd <project-folder>
 
 Create a python virtual environment to isolate dependencies:
 
-For windows
+*For windows*
 ```
 python -m venv myenv
 ```
 
-For mac
+*For mac*
 ```
 python3 -m venv myenv
 ```
 
 Activate the virtual environment:
 
-For windows
+*For windows*
 ```
 myenv\Scripts\activate
 ```
 
-For mac
+*For mac*
 ```
 source myenv/bin/activate
 ```
